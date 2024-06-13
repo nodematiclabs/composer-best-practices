@@ -1,0 +1,344 @@
+mouseWheel:
+  _isScalar: false
+  closed: false
+  isStopped: false
+  hasError: false
+  thrownError: null
+  __isAsync: false
+elementDraw:
+  _isScalar: false
+  closed: false
+  isStopped: false
+  hasError: false
+  thrownError: null
+  __isAsync: false
+snapSettings:
+  constraints: 16
+serializationSettings:
+  preventDefaults: true
+contextMenuSettings:
+  show: true
+  items:
+    - text: Edit
+      id: edit
+      target: .e-elementcontent
+      iconCss: fa fa-cogs
+    - text: Callout To
+      id: callout
+      target: .e-elementcontent
+      iconCss: fa fa-crosshairs
+    - text: Increase font size ↑
+      id: increaseFontSize
+      target: .e-elementcontent
+      iconCss: fa fa-font
+    - text: Decrease font size ↓
+      id: decreaseFontSize
+      target: .e-elementcontent
+      iconCss: fa fa-font
+    - text: Fill
+      id: fill
+      target: .e-elementcontent
+      iconCss: fa fa-tint
+    - text: Highlight
+      id: highlight
+      target: .e-elementcontent
+      iconCss: fa fa-lightbulb-o
+    - text: Collapse to square
+      id: collapseToSquare
+      target: .e-elementcontent
+      iconCss: fa fa-compress
+    - text: Collapse to named square
+      id: collapseToNamedSquare
+      target: .e-elementcontent
+      iconCss: fa fa-compress
+    - text: Collapse to circle
+      id: collapseToCircle
+      target: .e-elementcontent
+      iconCss: fa fa-compress
+    - text: Expand
+      id: expand
+      target: .e-elementcontent
+      iconCss: fa fa-expand
+    - text: Bring to front
+      id: front
+      target: .e-elementcontent
+      iconCss: fa fa-angle-double-up
+    - text: Bring forward
+      id: forward
+      target: .e-elementcontent
+      iconCss: fa fa-angle-up
+    - text: Send backward
+      id: backward
+      target: .e-elementcontent
+      iconCss: fa fa-angle-down
+    - text: Send to back
+      id: back
+      target: .e-elementcontent
+      iconCss: fa fa-angle-double-down
+    - text: Remove
+      id: remove
+      target: .e-elementcontent
+      iconCss: fa fa-times
+  showCustomMenuOnly: true
+tool: 5
+scrollSettings:
+  scrollLimit: Infinity
+  viewPortWidth: 630
+  viewPortHeight: 518
+addInfo:
+  currencyText: USD ($)
+  currencySymbol: $
+  selectedViewType: 0
+  projectFlowItems:
+    - id: a
+      workstream: GenAI Code Comments
+      task: Confirm repositories
+      merge: false
+    - id: b
+      workstream: MVP
+      task: Establish MVP resourcing
+      merge: false
+    - id: c
+      workstream: MVP Prep
+      task: GenAI recap and upskilling
+      merge: false
+      icon: REVERSE
+    - id: d
+      workstream: MVP Prep
+      task: Establish success criteria
+      merge: false
+      icon: HIGHLIGHT
+    - id: e
+      workstream: MVP Prep
+      task: Get repository data in GCP
+      merge: false
+    - id: f
+      workstream: MVP Prep
+      task: Finalize MVP scaffolding
+      merge: false
+    - id: g
+      workstream: MVP
+      task: MVP Prep
+      merge: true
+    - id: h
+      workstream: MVP
+      task: Complete MVP
+      merge: false
+    - id: i
+      workstream: GenAI Code Comments
+      task: MVP
+      merge: true
+    - id: j
+      workstream: GenAI Code Comments
+      task: Go/no-go decision
+      merge: false
+    - id: k
+      workstream: MVP
+      task: Additional MVP iterations
+      merge: false
+    - id: l
+      workstream: GenAI Code Comments
+      task: MVP
+      merge: true
+    - id: l
+      workstream: GenAI Code Comments
+      task: Implement changes
+      merge: false
+    - id: m
+      workstream: GenAI Code Comments
+      task: Analyze and measure impact
+      merge: false
+  name: Composer Setup & Best Practices
+  author: Nodematic
+  description: <ul><li>Use multiple environments to avoid mixing major business
+    areas and pre-prod vs. prod usage/resources</li><li>Use the full power of
+    the GCP operations suite (Cloud Monitoring, Cloud Logging, and Cloud
+    Alerting) for data-driven management of the environment and SRE</li><li>Tune
+    resources for the schedulers, triggerers, web server, and workers (the
+    underlying Kubernetes/infra layer will otherwise be taken care of for
+    you)</li><li>Use the off-the-shelf Operators whenever possible to maximize
+    code maintainability and understandability</li><li>Avoid doing "heavy
+    lifting" in your workflows directly - use external services (e.g., BigQuery,
+    Dataproc, Dataflow,...) for that (these are purpose built for that heavy
+    lifting)</li><li>Airflow==Orchestration</li><li>Use a non-default (carefully
+    role-scoped) service account to handle the authentication (rather than
+    service account keys, etc.)</li><li>Use generators, factories, and other
+    similar abstractions sparingly - DRY (don't repeat yourself) can sometimes
+    mean worse code</li><li>Ensure tasks are idempotent (expect failure for your
+    DAG tasks, so they can restart cleanly) - if the task fails and restarts,
+    that shouldn't affect the results (mostly about keeping tasks modular and
+    atomic)</li></ul>
+  objectives: []
+  experiments: []
+  experimentCols:
+    - field: name
+      header: Name
+height: 518
+connectors:
+  - id: Dashed Straight ConnectorF3w3O
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+      strokeDashArray: 2 2
+    sourcePoint:
+      x: 393.5
+      y: 357
+    targetPoint:
+      x: 393.5
+      y: 331
+    sourceID: Apache AirflowuKhaM
+    targetID: Cloud ComposerpLumV
+    addInfo:
+      viewConnector: 0
+    zIndex: 2
+nodes:
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #3871e0;"><div
+        class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/cloud_composer_Black_87_trymfd.png);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/cloud_composer_exzxtg.png);"></div><div
+        class="c-text"><div class="c-title">Cloud Composer</div><div
+        class="c-short-description">Orchestrating and managing complex data
+        processing workflows in the cloud</div><div class="c-bottom"><div
+        class="c-hr p-mb-1"></div><div class="c-title-bottom">Google Cloud
+        Platform</div></div></div></div></div>'
+    id: Cloud ComposerpLumV
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Cloud Composer
+        shortDescription: Orchestrating and managing complex data processing workflows
+          in the cloud
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        viewType: total
+        name: Cloud Composer
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Cloud Composer
+      editableName: Cloud Composer
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Processing Tool
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageProcessingTime
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Processing Tool
+          AverageProcessingTime: 1
+      name: Cloud Composer
+      category: 4
+      imgUrl: https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/cloud_composer_exzxtg.png
+      imgPrimaryUrl: https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/cloud_composer__044448_bsfmjf.png
+      imgBlackUrl: https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/cloud_composer_Black_87_trymfd.png
+      color: "#3871e0"
+      controlText: Cloud Composer
+      selectedDynamicsView: 0
+    width: 332.99999999999994
+    height: 100
+    offsetX: 393.5
+    offsetY: 281
+    zIndex: 0
+    inEdges:
+      - Dashed Straight ConnectorF3w3O
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: rgb(228,57,32);"><div
+        class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://res.cloudinary.com/dwohyn92h/image/upload/v1661855485/sds_logos/Apache_Airflow_Black_87_w3ovyr.png);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://res.cloudinary.com/dwohyn92h/image/upload/v1661855485/sds_logos/Apache_Airflow_iwusuo.png);"></div><div
+        class="c-text"><div class="c-title">Apache Airflow</div><div
+        class="c-short-description">Orchestrating, scheduling, and managing
+        complex data workflows and pipelines</div><div class="c-bottom"><div
+        class="c-hr p-mb-1"></div><div class="c-title-bottom">Apache
+        Airflow</div></div></div></div></div>'
+    id: Apache AirflowuKhaM
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Apache Airflow
+        shortDescription: Orchestrating, scheduling, and managing complex data workflows
+          and pipelines
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        viewType: total
+        name: Apache Airflow
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Apache Airflow
+      editableName: Apache Airflow
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Processing Tool
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageJobDuration
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Processing Tool
+          AverageJobDuration: 1
+      name: Apache Airflow
+      category: 9
+      imgUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1661855485/sds_logos/Apache_Airflow_iwusuo.png
+      imgPrimaryUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1661855485/sds_logos/Apache_Airflow__0484848_vf3ljt.png
+      imgBlackUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1661855485/sds_logos/Apache_Airflow_Black_87_w3ovyr.png
+      color: rgb(228,57,32)
+      controlText: Apache Airflow
+      selectedDynamicsView: 0
+    width: 300
+    height: 100
+    offsetX: 393.5
+    offsetY: 407
+    zIndex: 1
+    outEdges:
+      - Dashed Straight ConnectorF3w3O
+selectedItems:
+  width: 0
+  height: 0
